@@ -31,6 +31,14 @@ const imgObj = {
 				}
 			}
 		});
+		
+		//问题图片处理
+		document.addEventListener("error", function(e){
+			var elem = e.target;
+			if(elem.tagName.toLowerCase() === 'img'){
+				elem.src = "http://51coach.com/xcxcl/images/slchImg/20170331230148374.jpg";
+			}
+		},true);
 	},
 	imgLoad(e){
 		if(this.onload){

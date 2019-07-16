@@ -166,4 +166,17 @@ if(imgs[i].complete){
 setTimeout(function(){
 	this.style.opacity = 1;
 }, 10);
+
+4、图片打包配置
+{
+	test: /\.(png|svg|jpg|gif)$/,
+	use: [{
+		loader:'file-loader',
+		options:{
+			name:"[name].[ext]",
+			publicPath:"images/",
+			outputPath:"images/",
+		}
+	}]
+}
 ```

@@ -12,3 +12,9 @@ img{
 	transform: scale(0,0);
 	width: 100px;
 }
+.mimg{
+	width: 400px;
+	height: 400px;
+	background: url("./images/loadingBubbles.svg") no-repeat  center 50%;
+	background-color: coral;
+}
